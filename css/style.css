@@ -46,6 +46,10 @@ img {
 
 }
 
+#header li a:hover {
+  opacity: 0.7;
+}
+
 #header li img.icon {
   width: 20px;
 }
