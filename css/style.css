@@ -1,3 +1,9 @@
+
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -12,12 +18,19 @@ img {
   vertical-align: middle;
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 .wrapper {
   max-width: 960px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
   padding: 0 4%;
-  
 }
+  
+  
 
 /*======header======= */
 
@@ -27,12 +40,17 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 270px;
+  margin: 0 auto;
   padding: 0 4%;
 }
 
 .header-logo {
   font-weight: lighter;
   font-size: 26px;  
+}
+
+.header-logo a {
+  display: block;
 }
 
 #header ul {
@@ -42,7 +60,7 @@ img {
 
 #header ul li {
   margin-left: 30px;
-  font-size: 15px;
+  font-size: 14px;
 
 }
 
@@ -56,12 +74,202 @@ img {
 
 /* main visual */
 .main-visual {
-  margin-top: -80px;
+  margin-bottom: 80px;
 }
 
 .main-image {
   width: 100%;
-  height: 360px;
+  height: 420px;
   max-width: 1920px;
   object-fit: cover;
+}
+
+/* about */
+
+#About {
+  margin-top: 80px;
+}
+
+#About ul {
+  margin-top: 80px;
+}
+
+#About li {
+  font-size: 14px;
+}
+
+#About li:first-child {
+  margin-bottom: 30px;
+}
+
+#About .About-text {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Works */
+#Works ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#Works li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+#Works img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+#News dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: solid 1px #c8c8c8;
+  font-size: 14px;
+}
+
+#News dt {
+  width: 20%;
+  padding: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+#News dd {
+  width: 80%;
+  padding: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+/* contact */
+
+#Contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#Contact dt {
+  width: 15%;
+  font-size: 14px;
+}
+
+#Contact dd {
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+#Contact dd input,
+#Contact dd textarea {
+  border: solid 1px #c8c8c8;
+  width: 100%;
+  padding: 10px;
+}
+
+#Contact dd textarea {
+  height: 140px;
+}
+
+#Contact .button {
+  text-align: center;
+}
+
+#Contact .button input {
+  width: 200px;
+  color: white;
+  background-color: black;
+  border: solid 1px black;
+  padding: 15px 0;
+}
+
+#Contact .button input:hover {
+  color: #24292e;
+  background: white;
+}
+
+/* footer */
+
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+.wrapper {
+  margin-bottom: 70px;
+}
+
+.header-logo {
+  margin-top: 20px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+
+#header {
+  max-width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
+#header nav ul li {
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+#header nav ul li:first-child {
+  margin-left: 0;
+}
+
+
+#Works ul {
+  flex-direction: column;
+}
+
+#Works li {
+  width: 100%;
+}
+
+#News dl {
+  flex-direction: column;
+}
+
+#News dt {
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#News dd {
+  width: 100%;
+  padding-top: 0;
+}
+
+#Contact dl {
+  flex-direction: column;
+}
+
+#Contact dt {
+  width: 100%;
+}
+
+#Contact dd {
+  width: 100%;
+}
+
+
+
+
 }
